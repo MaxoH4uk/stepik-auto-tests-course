@@ -1,16 +1,9 @@
 import time
 import math
 import pytest
-from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-
-@pytest.fixture(scope="function")
-def browser():
-    browser = webdriver.Chrome()
-    yield browser
-    browser.quit()
 
 class TestCorrectAnswer():
 
